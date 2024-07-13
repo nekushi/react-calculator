@@ -1,0 +1,16 @@
+.screen {
+    /* TYPOGRAPHY */
+    font-size: 25px;
+
+    /* BOX MODEL */
+    width: 100%;
+    height: 25%;
+    padding: 1rem;
+    border: 5px solid #000;
+    border-radius: 16px;
+
+    /* DISPLAY */
+    display: grid;
+    justify-content: end;
+    align-items: end;
+}

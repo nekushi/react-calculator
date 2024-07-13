@@ -1,0 +1,39 @@
+.numpads {
+    /* BOX MODEL */
+    height: 90%;
+    width: 100%;
+    border: 3px solid rgb(250, 215, 236);
+    border-radius: 12px;
+
+    /* DISPLAY */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    place-items: center;
+    /* border: 1px solid red; */
+}
+.numpads > div:not(.equals) {
+    padding: 2rem;
+    border-radius: 100%;
+    background-color: antiquewhite;
+}
+.numpads > div.equals {
+    /* GRID AREA */
+    grid-area: 4 / 4 / 6 / 5; 
+
+    /* BOX MODEL */
+    height: 85%;
+    padding-inline: 2rem;
+
+    /* DESIGN */
+    background-color: antiquewhite;
+    border-radius: 100px;
+    
+    /* DISPLAY */
+    display: grid;
+    place-items: center;
+}
+.numpads > div:active {
+    background-color: #ddd;
+    color: #8a8a8a;
+}
